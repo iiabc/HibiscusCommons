@@ -68,6 +68,9 @@ allprojects {
                 artifact()
             }
         }
+
+        // LibsDisguises
+        maven("https://mvn.lib.co.nz/public")
     }
 
     dependencies {
@@ -87,9 +90,7 @@ allprojects {
         compileOnly("net.Indyuce:MMOItems-API:6.9.4-SNAPSHOT")
         compileOnly("com.willfp:eco:6.74.5")
         compileOnly("me.clip:placeholderapi:2.11.6")
-        compileOnly("LibsDisguises:LibsDisguises:10.0.44") {
-            exclude("org.spigotmc", "spigot")
-        }
+        compileOnly("me.libraryaddict.disguises:libsdisguises:11.0.13")
         compileOnly("com.github.Xiao-MoMi:Custom-Fishing:2.3.3")
         compileOnly("com.ticxo.modelengine:ModelEngine:R4.0.2")
         compileOnly("org.joml:joml:1.10.8")
